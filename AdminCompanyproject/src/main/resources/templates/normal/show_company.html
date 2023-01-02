@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymelef.org"
+	th:replace="normal\base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<section>
+		<div class="card mr-3">
+			<div class="card-body">
+
+				<h1 class="text-center">Your Company User</h1>
+
+
+				<table class="table">
+					<thead>
+						<tr>
+							<!--  <th scope="col">#Id</th>  -->
+							<th scope="col">Name</th>
+							<th scope="col">Email</th>
+							<th scope="col">Address</th>
+							<th scope="col">type</th>
+						<!-- 	<th scope="col">Actions</th> -->
+						</tr>
+					</thead>
+					<tbody>
+
+						<tr th:each="c:  ${companyy}">
+							<!-- <th scope="row" th:text="${ 'SCM2022'+c.id}">1</th> -->
+							<td><span th:text="${c.cName}"></span></td>
+							<td>
+								<!-- <a href="#" th:href="@{'/user/'+${c.id}+'/company'}"></a> -->
+								<span th:text="${c.cEmail}"></span>
+							</td>
+							<td><span th:text="${c.cAddress}"></span></td>
+
+							<td><span th:text="${c.type}"></span></td>
+
+							 <td><!-- <a th:href="@{/user/update-process(id=${c.id})}"
+								class="btn btn-primary">Update</a>
+								 
+							<a	th:href="@{/user/delete/{id}(id=${c.id})}"
+								class="btn btn-danger">Delete</a> -->
+							
+							<!-- <a  th:href="@{/signin}"class="btn btn-primary">Login User</a> -->
+								
+							</td>	
+
+						</tr>
+
+					</tbody>
+
+
+				</table>
+			</div>
+		</div>
+
+	</section>
+
+
+
+</body>
+</html>
