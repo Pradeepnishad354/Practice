@@ -176,7 +176,7 @@
 
 
         
-<div   class="bootstrap-wrapper m"  *ngIf="isSubmit">
+<div   class="bootstrap-wrapper "  *ngIf="isSubmit">
     <mat-card >
         <mat-card-header>
             <mat-card-title>
@@ -198,9 +198,10 @@
         <td>{{correctAnswers}}</td>
         <td>{{attemted}}</td>
       </tr>
+      <button (click)="exportexcel()"  mat-raised-button color="accent" class="mt10">Print Excel</button>
+      <button routerLink="/user-dashboard/0" mat-raised-button color="accent" class="mt10 ml10">Home</button>
     </table>
-    <button (click)="exportexcel()"  mat-raised-button color="accent" class="mt10">Print Excel</button>
-    <button routerLink="/user-dashboard/0" mat-raised-button color="accent" class="mt10 ml10">Home</button>
+   
 </mat-card>
   </div> 
 
