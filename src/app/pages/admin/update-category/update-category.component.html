@@ -1,0 +1,41 @@
+<!-- <p>update-category works!</p> -->
+<mat-card>
+    <h1>Update  Category</h1>
+    <mat-card-content>
+      <div class="bootstrap-wrapper">
+    <div class="row">
+    <div class="col-md-9 offset-md-1">
+       
+        <form   (ngSubmit)="updateSubmit()">
+            <mat-form-field class="w100" appearance="outline">
+            <mat-label>Title</mat-label>
+            <input autofocus type="text" [(ngModel)]="category.title"name="title"  matInput placeholder="Enter category title"  required>
+                 
+            </mat-form-field>
+            
+            <mat-form-field class="w100" appearance="outline">
+                <mat-label>description</mat-label>
+                <textarea type="text" [(ngModel)]="category.description" name="description"  matInput placeholder="Enter category description" rows="8" ></textarea>
+                     
+                </mat-form-field>
+    <div class="container text-center ">
+    
+        <button mat-raised-button color="accent">Update</button>
+    
+    
+    
+    </div>
+    
+            
+               </form> 
+            
+    </div>
+    
+    </div>
+    
+    
+      </div>
+    
+    </mat-card-content>
+    </mat-card>
+    

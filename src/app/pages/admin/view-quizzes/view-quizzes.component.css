@@ -1,0 +1,16 @@
+.mt10{
+  margin-left:0px;
+}
+.ml20{
+
+    margin-left: 20px;
+}
+
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('../../../../assets/exam.png');
+    background-size: cover;
+  }

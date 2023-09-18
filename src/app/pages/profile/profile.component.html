@@ -1,0 +1,67 @@
+
+<mat-card *ngIf="user">
+<h1>Welcome to Profile</h1>
+
+<mat-card-content>
+<div clas="bootstrap-wrapper">
+<div class="container">
+<div class="container text-center">
+<img src="https://cdn.vectorstock.com/i/preview-1x/70/84/default-avatar-profile-icon-symbol-for-website-vector-46547084.jpg" alt=""
+class="profile-image"
+>
+<h1>{{user.firstName}} {{user.lastName}}</h1>
+</div>
+    <div class="row">
+<div class="col-md-10 offset-md-1">
+<table class="table">
+<tr>
+   <td>Username</td> 
+   <td>{{user.username}}</td> 
+</tr>
+<tr>
+   <td>UserId</td> 
+   <td>Exam {{user.id}}</td> 
+</tr>
+
+<!-- if phone number is null then it will not show
+
+<tr *ngIf="user.phone">
+    <td>Phone</td> 
+    <td>{{user.phone}}</td> 
+ </tr> -->
+
+
+<tr>
+    <td>Phone</td> 
+    <td>{{user.phone}}</td> 
+ </tr>
+
+ <tr>
+    <td>Role</td> 
+    <td>{{user.authorities[0].authority}}</td> 
+ </tr>
+ 
+<tr>
+   <td>Status</td> 
+   <td>{{user.enabled ? "ACTIVE":"NONACTIVE"}}</td> 
+</tr>
+
+
+</table>
+
+</div>
+
+
+
+    </div>
+</div>
+
+</div>
+
+</mat-card-content>
+<mat-card-actions class="text-center justify-content-center">
+    <button mat-raised-button color="primary">UPDATE</button>
+    <button mat-raised-button color="accent">SHARE</button>
+  </mat-card-actions>
+  
+</mat-card>

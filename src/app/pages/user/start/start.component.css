@@ -1,0 +1,44 @@
+.text{
+
+   
+    justify-content: center;
+}
+
+/* .col-md-2{
+
+    margin-left: 20px;
+    position: fixed;
+
+} */
+.text2{
+
+    margin-left: 20px;
+    position: fixed;
+
+
+}
+.margin{
+
+    margin-top: 60px;
+}
+.center{
+
+    margin: auto;
+}
+
+.table{
+    width: 20%;
+   
+}
+.style{
+
+    width: 50%;
+    border: 20xp black;
+}
+
+table, th, td {
+    border: 1px solid;
+    width: 45%;
+    margin-top: 10px;
+    height: 40px;
+  }
