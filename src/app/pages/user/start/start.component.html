@@ -174,16 +174,16 @@
 
 </div>   -->
 
-<mat-card >
-    <mat-card-header>
-        <mat-card-title>
-           <h2>Quiz Result</h2> 
-        </mat-card-title>
-        
-        </mat-card-header>
+
         
 <div   class="bootstrap-wrapper m"  *ngIf="isSubmit">
-   
+    <mat-card >
+        <mat-card-header>
+            <mat-card-title>
+               <h2>Quiz Result</h2> 
+            </mat-card-title>
+            
+            </mat-card-header>
    
     <table id="excel-table">
       <thead>
@@ -201,6 +201,7 @@
     </table>
     <button (click)="exportexcel()"  mat-raised-button color="accent" class="mt10">Print Excel</button>
     <button routerLink="/user-dashboard/0" mat-raised-button color="accent" class="mt10 ml10">Home</button>
-  </div> 
 </mat-card>
+  </div> 
+
   
