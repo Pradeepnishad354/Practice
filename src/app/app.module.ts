@@ -49,6 +49,7 @@ import{NgxUiLoaderHttpModule}from 'ngx-ui-loader';
 import {MatTableModule} from '@angular/material/table';
 import { UpdateQuizQuestionComponent } from './pages/admin/update-quiz-question/update-quiz-question.component';
 import { UpdateCategoryComponent } from './pages/admin/update-category/update-category.component';
+import { UpdateProfileComponent } from './pages/update-profile/update-profile.component';
 
 
 @NgModule({
@@ -77,6 +78,7 @@ import { UpdateCategoryComponent } from './pages/admin/update-category/update-ca
          StartComponent,
          UpdateQuizQuestionComponent,
          UpdateCategoryComponent,
+         UpdateProfileComponent,
         
    
    

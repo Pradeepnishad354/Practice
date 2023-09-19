@@ -34,7 +34,14 @@ class="profile-image"
 <tr>
     <td>Phone</td> 
     <td>{{user.phone}}</td> 
+    
  </tr>
+<!-- 
+ <tr>
+   <td>Id</td> 
+   <td>{{user.id}}</td> 
+   
+</tr> -->
 
  <tr>
     <td>Role</td> 
@@ -60,8 +67,8 @@ class="profile-image"
 
 </mat-card-content>
 <mat-card-actions class="text-center justify-content-center">
-    <button mat-raised-button color="primary">UPDATE</button>
-    <button mat-raised-button color="accent">SHARE</button>
+    <!-- <button [routerLink]="'/update/profile/'+user.id"  mat-raised-button color="primary">UPDATE</button> -->
+    <!-- <button mat-raised-button color="accent">SHARE</button> -->
   </mat-card-actions>
   
 </mat-card>

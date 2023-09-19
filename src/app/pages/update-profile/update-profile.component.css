@@ -1,0 +1,33 @@
+
+
+
+.full-width{
+    width: 100%;
+    margin-top: 25px;
+   
+    
+
+}
+.margin{
+
+ margin-top: 25px;
+ height: 40px;
+}
+.m{
+    margin-top: 25px;
+    margin-left: 20px;
+    height: 40px;
+   
+    
+    width: 90px;
+    
+}
+
+.margin1{
+margin-top: 20px;
+
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }

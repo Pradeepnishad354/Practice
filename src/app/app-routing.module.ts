@@ -22,6 +22,7 @@ import { InstructionsComponent } from './pages/user/instructions/instructions.co
 import { StartComponent } from './pages/user/start/start.component';
 import { UpdateQuizQuestionComponent } from './pages/admin/update-quiz-question/update-quiz-question.component';
 import { UpdateCategoryComponent } from './pages/admin/update-category/update-category.component';
+import { UpdateProfileComponent } from './pages/update-profile/update-profile.component';
 
 
 const routes: Routes = [
@@ -129,8 +130,17 @@ children:[{
   path:'start/:qid',
   component:StartComponent,
   canActivate:[NormalGuard]
-}
+},
+{
+  path:'user/profile',
+  component:ProfileComponent
+},
+{
 
+  path:'update/profile/:id',
+  component:UpdateProfileComponent,
+  pathMatch:'full'
+}
 
 ]
 
